@@ -12,26 +12,26 @@ import Contact from '../content/Contact'
 import Resume from '../content/Resume'
 
 export default props => (
-  <Container
-    fluid
-    className={classNames('content', { 'is-open': props.isOpen })}
-  >
+  <div>
+    {' '}
     <NavBar toggle={props.toggle} />
-    <Switch>
-      <Route exact path="/" component={() => 'Hello'} />
-      <Route exact path="/about" component={() => <About />} />
-      <Route exact path="/WebDev" component={() => <WebDev />} />
-      <Route exact path="/Video" component={() => <Video />} />
-      <Route exact path="/Design" component={() => <Design />} />
-      <Route exact path="/Motion" component={() => <Motion />} />
-      <Route exact path="/Resume" component={() => <Resume />} />
-      <Route exact path="/contact" component={() => <Contact />} />
-      <Route exact path="/Page-1" component={() => 'Page-1'} />
-      <Route exact path="/Page-2" component={() => 'Page-2'} />
-      <Route exact path="/page-1" component={() => 'page-1'} />
-      <Route exact path="/page-2" component={() => 'page-2'} />
-      <Route exact path="/page-3" component={() => 'page-3'} />
-      <Route exact path="/page-4" component={() => 'page-4'} />
-    </Switch>
-  </Container>
+    <Container className={classNames('content', { 'is-closed': props.isOpen })}>
+      <Switch>
+        <Route exact path="/" component={() => <About />} />
+        <Route exact path="/about" component={() => <About />} />
+        <Route exact path="/WebDev" component={() => <WebDev />} />
+        <Route exact path="/Video" component={() => <Video />} />
+        <Route exact path="/Design" component={() => <Design />} />
+        <Route exact path="/Motion" component={() => <Motion />} />
+        <Route exact path="/Resume" component={() => <Resume />} />
+        <Route exact path="/contact" component={() => <Contact />} />
+        <Route exact path="/Page-1" component={() => 'Page-1'} />
+        <Route exact path="/Page-2" component={() => 'Page-2'} />
+        <Route exact path="/page-1" component={() => 'page-1'} />
+        <Route exact path="/page-2" component={() => 'page-2'} />
+        <Route exact path="/page-3" component={() => 'page-3'} />
+        <Route exact path="/page-4" component={() => 'page-4'} />
+      </Switch>
+    </Container>
+  </div>
 )

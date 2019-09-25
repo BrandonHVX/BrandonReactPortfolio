@@ -12,6 +12,12 @@ import SubMenu from './SubMenu'
 import { NavItem, NavLink, Nav } from 'reactstrap'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
+import brandonpic1 from '../../images/brandon1.jpg'
+
+const sidebarpic = {
+  width: '200px',
+  borderRadius: '500px'
+}
 
 const SideBar = props => (
   <div className={classNames('sidebar', { 'is-open': props.isOpen })}>
@@ -24,22 +30,22 @@ const SideBar = props => (
     <div className="side-menu">
       <Nav vertical className="list-unstyled pb-3">
         <p>Heading</p>
-
+        <img src={brandonpic1} alt="" style={sidebarpic} />
         <NavItem>
-          <NavLink tag={Link} to={'/about'}>
+          <NavLink tag={Link} to={'/about'} onClick={props.toggle}>
             <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
             About
           </NavLink>
         </NavItem>
         <SubMenu title="Projects" icon={faImage} items={submenus[1]} />
         <NavItem>
-          <NavLink tag={Link} to={'/resume'}>
+          <NavLink tag={Link} to={'/resume'} onClick={props.toggle}>
             <FontAwesomeIcon icon={faCopy} className="mr-2" />
             Resume
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to={'/contact'}>
+          <NavLink tag={Link} to={'/contact'} onClick={props.toggle}>
             <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
             Contact
           </NavLink>
@@ -79,7 +85,7 @@ const submenus = [
     },
     {
       title: 'Motion Graphics',
-      target: 'Motion'
+      target: 'Page-2'
     }
   ]
 ]

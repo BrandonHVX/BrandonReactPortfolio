@@ -36,6 +36,11 @@ a:focus {
   transition: 0.5s;
 }
 
+.sidebar.is-closed {
+  margin-left: -260px;
+  transition: 0.5s;
+}
+
 .sidebar-header {
   background: #6d7fcc;
 }
@@ -82,6 +87,8 @@ li a.dropdown-toggle::after {
 .side-menu {
   height: calc(100vh - 130px);
   overflow-y: scroll;
+  display: flex;
+  justify-content: center;
 }
 
 .side-menu::-webkit-scrollbar {
@@ -101,7 +108,7 @@ li a.dropdown-toggle::after {
     CONTENT STYLE
 ----------------------------------------------------- */
 .content {
-  padding: 20px;
+  padding-left: 20px;
   margin-left: 0;
   height: 100vh;
 }
