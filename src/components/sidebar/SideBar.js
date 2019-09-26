@@ -32,7 +32,12 @@ const SideBar = props => (
         <p>Heading</p>
         <img src={brandonpic1} alt="" style={sidebarpic} />
         <NavItem>
-          <NavLink tag={Link} to={'/about'} onClick={props.toggle}>
+          <NavLink
+            tag={Link}
+            to={'/about'}
+            className="sidebar-mobile"
+            onClick={props.toggle}
+          >
             <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
             About
           </NavLink>
