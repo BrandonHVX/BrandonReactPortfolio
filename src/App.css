@@ -7,7 +7,7 @@
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'News Cycle', sans-serif;
   background: #fafafa;
 }
 
@@ -103,22 +103,38 @@ li a.dropdown-toggle::after {
 .side-menu::-webkit-scrollbar-thumb:hover {
   background: #3a4c99;
 }
+/* ---------------------------------------------------
+    RESUME STYLE
+----------------------------------------------------- */
+
+.resume-page {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 .content {
-  padding-left: 20px;
+  padding-left: 30px;
   margin-left: 0;
   height: 100vh;
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    overflow: hidden;
+@media only screen and (min-width: 668px) {
+  .mobile-nav {
+    display: none;
   }
 
-  .sidebar-mobile {
+  .resume-container {
+    padding: 100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: scroll;
   }
 
   .content.is-open {

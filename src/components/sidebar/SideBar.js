@@ -26,31 +26,34 @@ const SideBar = props => (
         &times;
       </span>
       <h3>Sidebar</h3>
+
+      <img src={brandonpic1} alt="" style={sidebarpic} />
     </div>
     <div className="side-menu">
       <Nav vertical className="list-unstyled pb-3">
         <p>Heading</p>
-        <img src={brandonpic1} alt="" style={sidebarpic} />
+
         <NavItem>
-          <NavLink
-            tag={Link}
-            to={'/about'}
-            className="sidebar-mobile"
-            onClick={props.toggle}
-          >
+          <NavLink tag={Link} to={'/about'} className="sidebar-mobile">
             <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
             About
           </NavLink>
         </NavItem>
         <SubMenu title="Projects" icon={faImage} items={submenus[1]} />
         <NavItem>
-          <NavLink tag={Link} to={'/resume'} onClick={props.toggle}>
+          <NavLink tag={Link} to={'/projects'}>
+            <FontAwesomeIcon icon={faImage} className="mr-2" />
+            Projects
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink tag={Link} to={'/resume'}>
             <FontAwesomeIcon icon={faCopy} className="mr-2" />
             Resume
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to={'/contact'} onClick={props.toggle}>
+          <NavLink tag={Link} to={'/contact'}>
             <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
             Contact
           </NavLink>

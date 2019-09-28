@@ -10,6 +10,7 @@ import Design from '../content/Design'
 import Motion from '../content/Motion'
 import Contact from '../content/Contact'
 import Resume from '../content/Resume'
+import Projects from '../content/Projects'
 
 export default props => (
   <div>
@@ -19,6 +20,7 @@ export default props => (
       <Switch>
         <Route exact path="/" component={() => <About />} />
         <Route exact path="/about" component={() => <About />} />
+        <Route exact path="/projects" component={() => <Projects />} />
         <Route exact path="/WebDev" component={() => <WebDev />} />
         <Route exact path="/Video" component={() => <Video />} />
         <Route exact path="/Design" component={() => <Design />} />

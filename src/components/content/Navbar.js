@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAlignLeft } from '@fortawesome/free-solid-svg-icons'
 import {
   Navbar,
+  NavDropdown,
   Button,
-  NavbarToggler,
   Collapse,
   Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap'
+  NavItem
+} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 export default props => {
@@ -17,40 +16,49 @@ export default props => {
   const toggle = () => setOpen(!isOpen)
 
   return (
-    <Navbar
-      color="light"
-      light
-      className="navbar shadow-sm p-3 mb-5 bg-white rounded"
-      expand="md"
-    >
-      <Button color="info" onClick={props.toggle}>
-        <FontAwesomeIcon icon={faAlignLeft} />
-      </Button>
-      <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
+    <Navbar className="mobile-nav" collapseOnSelect bg="dark" expand="lg">
+      Hello
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink tag={Link} to={'/page-1'}>
-              page 1
-            </NavLink>
+            <Nav.Link tag={Link} to={'/page-1'}>
+              About
+            </Nav.Link>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-2'}>
-              page 2
-            </NavLink>
+            <NavDropdown title="Projects" id="collasible-nav-dropdown">
+              <NavDropdown.Item tag={Link} to={'/webdev'}>
+                WebDev
+              </NavDropdown.Item>
+              <NavDropdown.Item tag={Link} to={'/video'}>
+                Video
+              </NavDropdown.Item>
+              <NavDropdown.Item tag={Link} to={'/design'}>
+                Design
+              </NavDropdown.Item>
+              <NavDropdown.Item tag={Link} to={'/motion'}>
+                Motion
+              </NavDropdown.Item>
+            </NavDropdown>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-3'}>
+            <Nav.Link tag={Link} to={'/page-2'}>
+              Projects
+            </Nav.Link>
+          </NavItem>
+          <NavItem>
+            <Nav.Link tag={Link} to={'/page-3'}>
               page 3
-            </NavLink>
+            </Nav.Link>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to={'/page-4'}>
+            <Nav.Link tag={Link} to={'/page-4'}>
               page 4
-            </NavLink>
+            </Nav.Link>
           </NavItem>
         </Nav>
-      </Collapse>
+      </Navbar.Collapse>
     </Navbar>
   )
 }
