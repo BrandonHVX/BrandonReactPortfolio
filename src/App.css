@@ -107,12 +107,6 @@ li a.dropdown-toggle::after {
     RESUME STYLE
 ----------------------------------------------------- */
 
-.resume-page {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: scroll;
-}
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -120,15 +114,12 @@ li a.dropdown-toggle::after {
   padding-left: 30px;
   margin-left: 0;
   height: 100vh;
+  overflow: scroll;
 }
 
 @media only screen and (min-width: 668px) {
   .mobile-nav {
     display: none;
-  }
-
-  .resume-container {
-    padding: 100px;
   }
 }
 

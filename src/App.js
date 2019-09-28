@@ -12,8 +12,12 @@ export default () => {
   return (
     <Router>
       <div className="App wrapper">
-        <SideBar toggle={toggle} isOpen={isOpen} />
-        <Content toggle={toggle} isOpen={isOpen} />
+        <div className="side">
+          <SideBar toggle={toggle} isOpen={isOpen} />
+        </div>
+        <div className="text">
+          <Content toggle={toggle} isOpen={isOpen} />
+        </div>
       </div>
     </Router>
   )
