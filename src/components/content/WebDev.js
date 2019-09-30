@@ -1,4 +1,5 @@
 import React from "react";
+import posted from "../../images/twitter.svg";
 
 export default function WebDev() {
   return (
