@@ -1,77 +1,86 @@
 import React from 'react'
-import ae from '../../images/ae.svg'
-import ps from '../../images/ps.svg'
-import ai from '../../images/ai.svg'
-import xd from '../../images/xd.svg'
-import pr from '../../images/Pr.svg'
-import rails from '../../images/rails.svg'
-import sass from '../../images/sass.svg'
-import node from '../../images/node.svg'
-import slack from '../../images/slack.svg'
-import git from '../../images/git.svg'
-import npm from '../../images/npm.png'
-import vue from '../../images/vuejs.svg'
-import js from '../../images/js.svg'
-import ruby from '../../images/ruby.png'
-import html5 from '../../images/html5.svg'
-import bootstrap from '../../images/bootstrap.svg'
-import animationData from '../../images/greeting.json'
-import Lottie from 'react-lottie'
-import Brandonpic from '../../images/BrandonPic.jpg'
-import { Card, Row, Col, Container, Jumbotron, Button } from 'react-bootstrap'
-import reactsvg from '../../images/react.svg'
-import bgheader from '../../images/slide-4.jpg'
 
-const text = {
-  fontSize: '12px',
-  marginTop: '20px'
-}
-
-const col = {
-  marginTop: '20px'
-}
-
-const jumbo = {
-  backgroundColor: 'transparent '
-}
-
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: ''
-  }
-}
-
-const header = {
-  backgroundImage: `url(${bgheader})`
-}
-export default function About() {
+export default function JobsNow() {
   return (
     <div>
-      <header style={header}>
+      <header id="home">
         <div class="overlay"></div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+              <h3 class="my-heading ">SKEWED</h3>
+            </a>
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="fa fa-bars mfa-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#overview">
+                    Overview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">
+                    {' '}
+                    Team
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">
+                    Testimonial
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         <div class="tophead">
-          <div>
-            <Col>
-              {' '}
-              <Jumbotron style={jumbo}>
-                <p>
-                  <Lottie options={defaultOptions} width={400} />
-                </p>
-                <p class="subtitle-our-team">
-                  I'm a software engineer in frontend and backend development
-                  for complex scalable web apps. I write about software
-                  development on my blog. Want to know how I may help your
-                  project? Check out my project portfolio and online resume.
-                </p>
-                <p class="subtitle-our-team">
-                  <Button variant="primary">Learn more</Button>
-                </p>
-              </Jumbotron>
-            </Col>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7 ">
+                <h1 class="title-main wow fadeInLeft" data-wow-duration="1.5s">
+                  Dipendra's Designs
+                </h1>
+                <h3 class="subtitle-main wow fadeInUp" data-wow-duration="1.1s">
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit proin
+                  leo leo ornare nec vulputate tempus velit nam id purus tellus
+                  hendrerit mi dapibus.
+                </h3>
+                <div>
+                  <a href="javascript:void(0)" class="btn-explore ">
+                    Explore
+                  </a>
+                  <a href="javascript:void(0)" class="btn-account ">
+                    Create Account
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="sesgoabajo"></div>
@@ -81,120 +90,74 @@ export default function About() {
         <section class="overview-wrap" id="overview">
           <div class="container">
             <div class="contenedor">
-              <h2 class="title-our-team wow fadeInUp">About Me</h2>
-              <p class="subtitle-our-team wow fadeInUp">
+              <h2 class="title-overview wow fadeInUp">Overview</h2>
+              <p class="subtitle-overview wow fadeInUp">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo
                 leo ornare nec vulputate tempus velit nam id purus tellus
                 hendrerit mi dapibus
               </p>
-
-              <Row style={text}>
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={js} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={reactsvg} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={vue} width={40} alt="" />
-                    </span>
-                  </p>
-                  Vanilla Javascript, React.JS and Vue.js
-                </Col>
-                <br />
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={node} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={npm} width={40} alt="" />
-                    </span>
-                  </p>
-                  Node.js and npm
-                </Col>
-                <br />
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={ruby} width={38} alt="" />
-                    </span>
-                    <span>
-                      <img src={rails} width={38} alt="" />
-                    </span>
-                  </p>
-                  List skills/technologies here. You can change the icon above
-                  to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                  commodo ligula eget dolor.
-                </Col>
-                <br />
-
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={html5} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={reactsvg} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={bootstrap} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={sass} width={40} alt="" />
-                    </span>
-                  </p>
-                  List skills/technologies here. You can change the icon above
-                  to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                  commodo ligula eget dolor.
-                </Col>
-                <br />
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={ps} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={ai} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={xd} width={40} alt="" />
-                    </span>
-                  </p>
-                  List skills/technologies here. You can change the icon above
-                  to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                  commodo ligula eget dolor.
-                </Col>
-
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={pr} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={ae} width={40} alt="" />
-                    </span>
-                  </p>
-                  List skills/technologies here. You can change the icon above
-                  to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                  commodo ligula eget dolor.
-                </Col>
-                <Col style={col} xs={6} md={4}>
-                  <p>
-                    <span>
-                      <img src={git} width={40} alt="" />
-                    </span>
-                    <span>
-                      <img src={slack} width={40} alt="" />
-                    </span>
-                  </p>
-                  List skills/technologies here. You can change the icon above
-                  to any of the 1500+ FontAwesome 5 free icons available. Aenean
-                  commodo ligula eget dolor.
-                </Col>
-              </Row>
+              <div class="row">
+                <div
+                  class="col-md-6 col-lg-3 wow bounceInUp"
+                  data-wow-duration="1.4s"
+                >
+                  <div class="overview-box mx-auto">
+                    <div class="features-icons-icon d-flex">
+                      <i class="fa fa-html5 fa-5x html5 m-auto"></i>
+                    </div>
+                    <h5>Html 5</h5>
+                    <p class=" mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      proin leo ornare!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 wow bounceInUp"
+                  data-wow-duration="1.4s"
+                >
+                  <div class="overview-box mx-auto">
+                    <div class="features-icons-icon d-flex">
+                      <i class="fa fa-css3 fa-5x css3 m-auto"></i>
+                    </div>
+                    <h5>CSS 3</h5>
+                    <p class=" mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      proin leo ornare!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 wow bounceInUp"
+                  data-wow-duration="1.4s"
+                >
+                  <div class="overview-box mx-auto">
+                    <div class="features-icons-icon d-flex">
+                      <i class="fa fa-android fa-5x android m-auto"></i>
+                    </div>
+                    <h5>Android</h5>
+                    <p class=" mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      proin leo ornare!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 wow bounceInUp"
+                  data-wow-duration="1.4s"
+                >
+                  <div class="overview-box mx-auto">
+                    <div class="features-icons-icon d-flex">
+                      <i class="fa fa-drupal fa-5x drupal m-auto"></i>
+                    </div>
+                    <h5>Drupal</h5>
+                    <p class=" mb-0">
+                      Lorem ipsum dolor sit amet consectetur adipiscing elit
+                      proin leo ornare!
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

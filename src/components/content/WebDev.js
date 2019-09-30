@@ -1,65 +1,120 @@
-import React from "react";
-import posted from "../../images/twitter.svg";
+import React from 'react'
+import posted from '../../images/posted-logo.png'
+import {
+  Card,
+  Row,
+  Col,
+  Media,
+  Container,
+  Jumbotron,
+  Button
+} from 'react-bootstrap'
+import { Switch, Route, Link } from 'react-router-dom'
 
 export default function WebDev() {
   return (
-    <div class="container">
-      <div class="row">
-        <h4>
-          So I've worked on a new project and came up with this UI. Here you can
-          use it. :) Follow me on twitter:{" "}
-        </h4>
-      </div>
-
-      <div class="row row-margin-bottom">
-        <div class="col-md-5 no-padding lib-item" data-category="view">
-          <div class="lib-panel">
-            <div class="row box-shadow">
-              <div class="col-md-6">
+    <section class="blog-me pt-100 pb-100" id="blog">
+      <div class="container">
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-img">
                 <img
-                  class="lib-img-show"
-                  src="http://lorempixel.com/850/850/?random=123"
+                  src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog1.jpg"
+                  alt=""
                 />
+                <div class="post-category">
+                  <a href="#">WebDev</a>
+                </div>
               </div>
-              <div class="col-md-6">
-                <div class="lib-row lib-header">
-                  Example library
-                  <div class="lib-header-seperator"></div>
+              <div class="blog-content">
+                <div class="blog-title">
+                  <h4>
+                    <a href="#">Jobs Now</a>
+                  </h4>
+                  <div class="meta">
+                    <ul>
+                      <li>04 June 2018</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="lib-row lib-desc">
-                  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem
-                  ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas in pulvinar neque.
+                </p>
+                <Link to="/jobs-now" class="box_btn">
+                  View Project
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-img">
+                <img
+                  src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog2.jpg"
+                  alt=""
+                />
+                <div class="post-category">
+                  <a href="#">WebDev</a>
                 </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-title">
+                  <h4>
+                    <a href="#">NYX News</a>
+                  </h4>
+                  <div class="meta">
+                    <ul>
+                      <li>23 June 2018</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas in pulvinar neque.
+                </p>
+                <a href="#" class="box_btn">
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-img">
+                <img
+                  src="http://infinityflamesoft.com/html/abal-preview/assets/img/blog/blog3.jpg"
+                  alt=""
+                />
+                <div class="post-category">
+                  <a href="#">WebDev</a>
+                </div>
+              </div>
+              <div class="blog-content">
+                <div class="blog-title">
+                  <h4>
+                    <a href="#">Mobilies UX Treend</a>
+                  </h4>
+                  <div class="meta">
+                    <ul>
+                      <li>31 July 2018</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas in pulvinar neque.
+                </p>
+                <a href="#" class="box_btn">
+                  View Project
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-5 no-padding lib-item" data-category="ui">
-          <div class="lib-panel">
-            <div class="row box-shadow">
-              <div class="col-md-6">
-                <img
-                  class="lib-img"
-                  src="http://lorempixel.com/850/850/?random=456"
-                />
-              </div>
-              <div class="col-md-6">
-                <div class="lib-row lib-header">
-                  Example library
-                  <div class="lib-header-seperator"></div>
-                </div>
-                <div class="lib-row lib-desc">
-                  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem
-                  ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum
-                  dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                  Lorem ipsum dolor Lorem ipsum dolor
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }
