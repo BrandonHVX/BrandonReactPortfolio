@@ -1,5 +1,5 @@
-import React from 'react'
-import posted from '../../images/posted-logo.png'
+import React from "react";
+import posted from "../../images/posted-logo.png";
 import {
   Card,
   Row,
@@ -8,13 +8,13 @@ import {
   Container,
   Jumbotron,
   Button
-} from 'react-bootstrap'
-import { Switch, Route, Link } from 'react-router-dom'
+} from "react-bootstrap";
+import { Switch, Route, Link } from "react-router-dom";
 
 export default function WebDev() {
   return (
     <section class="blog-me pt-100 pb-100" id="blog">
-      <div class="container">
+      <div>
         <div class="row"></div>
         <div class="row">
           <div class="col-lg-4 col-md-6">
@@ -116,5 +116,5 @@ export default function WebDev() {
         </div>
       </div>
     </section>
-  )
+  );
 }

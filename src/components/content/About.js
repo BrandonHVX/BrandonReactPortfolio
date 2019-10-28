@@ -1,52 +1,52 @@
-import React from 'react'
-import ae from '../../images/ae.svg'
-import ps from '../../images/ps.svg'
-import ai from '../../images/ai.svg'
-import xd from '../../images/xd.svg'
-import pr from '../../images/Pr.svg'
-import rails from '../../images/rails.svg'
-import sass from '../../images/sass.svg'
-import node from '../../images/node.svg'
-import slack from '../../images/slack.svg'
-import git from '../../images/git.svg'
-import npm from '../../images/npm.png'
-import vue from '../../images/vuejs.svg'
-import js from '../../images/js.svg'
-import ruby from '../../images/ruby.png'
-import html5 from '../../images/html5.svg'
-import bootstrap from '../../images/bootstrap.svg'
-import animationData from '../../images/greeting.json'
-import Lottie from 'react-lottie'
-import Brandonpic from '../../images/BrandonPic.jpg'
-import { Card, Row, Col, Container, Jumbotron, Button } from 'react-bootstrap'
-import reactsvg from '../../images/react.svg'
-import bgheader from '../../images/slide-4.jpg'
+import React from "react";
+import ae from "../../images/ae.svg";
+import ps from "../../images/ps.svg";
+import ai from "../../images/ai.svg";
+import xd from "../../images/xd.svg";
+import pr from "../../images/Pr.svg";
+import rails from "../../images/rails.svg";
+import sass from "../../images/sass.svg";
+import node from "../../images/node.svg";
+import slack from "../../images/slack.svg";
+import git from "../../images/git.svg";
+import npm from "../../images/npm.png";
+import vue from "../../images/vuejs.svg";
+import js from "../../images/js.svg";
+import ruby from "../../images/ruby.png";
+import html5 from "../../images/html5.svg";
+import bootstrap from "../../images/bootstrap.svg";
+import animationData from "../../images/greeting.json";
+import Lottie from "react-lottie";
+import Brandonpic from "../../images/BrandonPic.jpg";
+import { Card, Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
+import reactsvg from "../../images/react.svg";
+import bgheader from "../../images/slide-4.jpg";
 
 const text = {
-  fontSize: '12px',
-  marginTop: '20px'
-}
+  fontSize: "12px",
+  marginTop: "20px"
+};
 
 const col = {
-  marginTop: '20px'
-}
+  marginTop: "20px"
+};
 
 const jumbo = {
-  backgroundColor: 'transparent '
-}
+  backgroundColor: "transparent "
+};
 
 const defaultOptions = {
   loop: true,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {
-    preserveAspectRatio: ''
+    preserveAspectRatio: ""
   }
-}
+};
 
 const header = {
   backgroundImage: `url(${bgheader})`
-}
+};
 export default function About() {
   return (
     <div>
@@ -56,10 +56,10 @@ export default function About() {
         <div class="tophead">
           <div>
             <Col>
-              {' '}
-              <Jumbotron style={jumbo}>
+              {" "}
+              {/* <Jumbotron style={jumbo}>
                 <p>
-                  <Lottie options={defaultOptions} width={400} />
+                  <Lottie options={defaultOptions} width={350} />
                 </p>
                 <p class="subtitle-our-team">
                   I'm a software engineer in frontend and backend development
@@ -70,7 +70,7 @@ export default function About() {
                 <p class="subtitle-our-team">
                   <Button variant="primary">Learn more</Button>
                 </p>
-              </Jumbotron>
+              </Jumbotron> */}
             </Col>
           </div>
 
@@ -597,5 +597,5 @@ export default function About() {
         </section>
       </main>
     </div>
-  )
+  );
 }
