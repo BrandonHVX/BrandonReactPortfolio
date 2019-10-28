@@ -57,9 +57,9 @@ export default function About() {
           <div>
             <Col>
               {" "}
-              {/* <Jumbotron style={jumbo}>
+              <Jumbotron style={jumbo}>
                 <p>
-                  <Lottie options={defaultOptions} width={350} />
+                  <Lottie options={defaultOptions} width={150} />
                 </p>
                 <p class="subtitle-our-team">
                   I'm a software engineer in frontend and backend development
@@ -70,7 +70,7 @@ export default function About() {
                 <p class="subtitle-our-team">
                   <Button variant="primary">Learn more</Button>
                 </p>
-              </Jumbotron> */}
+              </Jumbotron>
             </Col>
           </div>
 
