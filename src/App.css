@@ -3,6 +3,8 @@
   width: 100%;
   align-items: stretch;
   position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
