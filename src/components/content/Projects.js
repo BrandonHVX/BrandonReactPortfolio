@@ -45,16 +45,23 @@ export default function MyTabs(props) {
   const [activeTab, setActiveTab] = useState("1");
   return (
     <div>
-      <Jumbotron style={jumbo}>
-        {" "}
-        <h1>Projects</h1>
-        <p>
-          I'm a software engineer specialised in frontend and backend
-          development for complex scalable web apps. I write about software
-          development on my blog. Want to know how I may help your project?
-          Check out my project portfolio and online resume.
-        </p>
-      </Jumbotron>
+      <section class="galeria">
+        <div class="sesgoarriba"></div>
+        <div class="imagenes">
+          <img
+            src="https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt=""
+            class="img-fluid"
+          />
+          <div class="enmica">
+            <h2>Projects</h2>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="sesgoabajo"></div>
+      </section>
+
       <div style={text}>
         <Tab.Container defaultActiveKey="first">
           <Nav variant="pills" style={navtabs}>

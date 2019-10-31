@@ -59,16 +59,13 @@ export default function About() {
               {" "}
               <Jumbotron style={jumbo}>
                 <p>
-                  <Lottie options={defaultOptions} width={150} />
+                  <Lottie options={defaultOptions} width={250} />
                 </p>
                 <p class="subtitle-our-team">
                   I'm a software engineer in frontend and backend development
                   for complex scalable web apps. I write about software
                   development on my blog. Want to know how I may help your
                   project? Check out my project portfolio and online resume.
-                </p>
-                <p class="subtitle-our-team">
-                  <Button variant="primary">Learn more</Button>
                 </p>
               </Jumbotron>
             </Col>
