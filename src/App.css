@@ -11,7 +11,7 @@
 
 body {
   font-family: "News Cycle", sans-serif;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 a,
@@ -80,6 +80,7 @@ header {
   overflow: hidden;
 }
 .overlay {
+  z-index: 0;
   position: absolute;
   background-color: #00fbff90;
   height: 100%;
@@ -136,6 +137,22 @@ header .btn-account {
 
 .top-btn-block a {
   margin: 0 7px 0 0;
+}
+
+/***Mobile Navigation***/
+
+.mobile-nav {
+  background-color: transparent;
+}
+
+/***about***/
+
+.about-img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 /***overview***/
@@ -1381,6 +1398,9 @@ a.box_btn:hover::before {
 
 @media only screen and (min-width: 804px) {
   .mobile-nav {
+    display: none;
+  }
+  .about-img {
     display: none;
   }
 }

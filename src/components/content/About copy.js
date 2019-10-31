@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ae from "../../images/ae.svg";
 import ps from "../../images/ps.svg";
 import ai from "../../images/ai.svg";
@@ -21,7 +21,6 @@ import Brandonpic from "../../images/BrandonPic.jpg";
 import { Card, Row, Col, Container, Jumbotron, Button } from "react-bootstrap";
 import reactsvg from "../../images/react.svg";
 import bgheader from "../../images/slide-4.jpg";
-import NavBar from "./Navbar";
 
 const text = {
   fontSize: "12px",
@@ -49,13 +48,11 @@ const header = {
   backgroundImage: `url(${bgheader})`
 };
 export default function About() {
-  const [isOpen, setOpen] = useState(false);
-  const toggle = () => setOpen(!isOpen);
   return (
     <div>
       <header style={header}>
         <div class="overlay"></div>
-        <NavBar toggle={isOpen} />
+
         <div class="tophead">
           <div>
             <Col>
@@ -212,6 +209,249 @@ export default function About() {
             </div>
           </div>
 
+          <div class="sesgoabajo"></div>
+        </section>
+
+        <section class="our-team" id="team">
+          <div class="container">
+            <h2 class="title-our-team wow fadeInUp">Our Team</h2>
+            <p class="subtitle-our-team wow fadeInUp">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo
+              leo ornare nec vulputate tempus velit nam id purus tellus
+              hendrerit mi dapibus
+            </p>
+
+            <ul class="row">
+              <li
+                class="col-12 col-md-6 col-lg-3 wow fadeInLeft"
+                data-wow-duration="1.4s"
+              >
+                <div class="mycard-block equal-hight">
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/213117/pexels-photo-213117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <h3>
+                    <a href="javascript:void(0)">Lorem Ipsum</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                  <ul class="follow-us clearfix">
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn fb">
+                        <i class="fa fa-facebook "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn twitter">
+                        <i class="fa fa-twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn google">
+                        <i class="fa fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="col-12 col-md-6 col-lg-3 wow fadeInLeft"
+                data-wow-duration="1.4s"
+              >
+                <div class="mycard-block equal-hight">
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <h3>
+                    <a href="javascript:void(0)">Lorem Ipsum</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                  <ul class="follow-us clearfix">
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn fb">
+                        <i class="fa fa-facebook "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn twitter">
+                        <i class="fa fa-twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn google">
+                        <i class="fa fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="col-12 col-md-6 col-lg-3 wow fadeInLeft"
+                data-wow-duration="1.4s"
+              >
+                <div class="mycard-block equal-hight">
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <h3>
+                    <a href="javascript:void(0)">Lorem Ipsum</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                  <ul class="follow-us clearfix">
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn fb">
+                        <i class="fa fa-facebook "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn twitter">
+                        <i class="fa fa-twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn google">
+                        <i class="fa fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="col-12 col-md-6 col-lg-3 wow fadeInLeft"
+                data-wow-duration="1.4s"
+              >
+                <div class="mycard-block equal-hight">
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </figure>
+                  <h3>
+                    <a href="javascript:void(0)">Lorem Ipsum</a>
+                  </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                  <ul class="follow-us clearfix">
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn fb">
+                        <i class="fa fa-facebook "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn twitter">
+                        <i class="fa fa-twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle my-social-btn google">
+                        <i class="fa fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="testimonials-wrap" id="testimonials">
+          <div class="sesgoarriba"></div>
+          <div class="container">
+            <div class="contenedor">
+              <h2 class="title-testimonials wow fadeInUp">Happy Clients</h2>
+              <h3 class="subtitle-testimonials wow fadeInUp">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit proin leo
+                leo ornare nec vulputate tempus velit nam id purus tellus
+                hendrerit mi dapibus
+              </h3>
+
+              <div class="slide-one">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li
+                      data-target="#demo"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                      <div class="banner-slide">
+                        <img
+                          src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                          class="img-fluid"
+                        />
+                        <h5>Lorem Ipsum -</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit
+                          proin leo leo ornare nec vulputate tempus velit nam id
+                          purus tellus hendrerit mi dapibus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <div class="banner-slide">
+                        <img
+                          src="https://images.pexels.com/photos/903661/pexels-photo-903661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                          class="img-fluid"
+                        />
+                        <h5>Lorem Ipsum -</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit
+                          proin leo leo ornare nec vulputate tempus velit nam id
+                          purus tellus hendrerit mi dapibus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="banner-slide">
+                        <img
+                          src="https://images.pexels.com/photos/713520/pexels-photo-713520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                          class="img-fluid"
+                        />
+                        <h5>Lorem Ipsum -</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipiscing elit
+                          proin leo leo ornare nec vulputate tempus velit nam id
+                          purus tellus hendrerit mi dapibus.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    class="carousel-control-prev "
+                    href="#demo"
+                    data-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#demo"
+                    data-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sesgoabajo"></div>
         </section>
 

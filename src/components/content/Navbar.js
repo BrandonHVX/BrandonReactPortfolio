@@ -22,10 +22,18 @@ export default props => {
 
   return (
     <div>
-      <Navbar className="mobile-nav" color="light" light expand="md">
+      <Navbar className="mobile-nav" light expand="md">
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse
+          style={{
+            backgroundColor: "white",
+            position: "absolute",
+            width: "100%"
+          }}
+          isOpen={isOpen}
+          navbar
+        >
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink href="/about">About Me</NavLink>

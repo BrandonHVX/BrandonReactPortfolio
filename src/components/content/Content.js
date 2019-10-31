@@ -16,8 +16,9 @@ import JobsNow from "../content/projectsPages/JobsNow";
 export default props => (
   <div>
     {" "}
-    <NavBar toggle={props.toggle} />
     <div className="content">
+      {" "}
+      {/* <NavBar toggle={props.toggle} /> */}
       <Switch>
         <Route exact path="/" component={() => <About />} />
         <Route exact path="/about" component={() => <About />} />
